@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		90D0FA91285FCBC1001393DB /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D0FA91285FCBC1001393DB /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D0FA94285FCBC1001393DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90D0FA95285FCBC1001393DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		90D0FA9A285FCBC1001393DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		90D0FA88285FCBC1001393DB = {
 			isa = PBXGroup;
 			children = (
-				90D0FA93285FCBC1001393DB /* Todo */,
+				90D0FA93285FCBC1001393DB /* Quote */,
 				90D0FA92285FCBC1001393DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		90D0FA92285FCBC1001393DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				90D0FA91285FCBC1001393DB /* Todo.app */,
+				90D0FA91285FCBC1001393DB /* Quotes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		90D0FA93285FCBC1001393DB /* Todo */ = {
+		90D0FA93285FCBC1001393DB /* Quote */ = {
 			isa = PBXGroup;
 			children = (
 				90D0FAB4285FDF58001393DB /* Model */,
@@ -72,6 +72,7 @@
 				90D0FAA5285FCBC3001393DB /* Info.plist */,
 				90D0FAA6285FCBC3001393DB /* main.m */,
 			);
+			name = Quote;
 			path = Todo;
 			sourceTree = "<group>";
 		};
@@ -96,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		90D0FA90285FCBC1001393DB /* Todo */ = {
+		90D0FA90285FCBC1001393DB /* Quotes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90D0FAAA285FCBC3001393DB /* Build configuration list for PBXNativeTarget "Todo" */;
+			buildConfigurationList = 90D0FAAA285FCBC3001393DB /* Build configuration list for PBXNativeTarget "Quotes" */;
 			buildPhases = (
 				90D0FA8D285FCBC1001393DB /* Sources */,
 				90D0FA8E285FCBC1001393DB /* Frameworks */,
@@ -108,9 +109,9 @@
 			);
 			dependencies = (
 			);
-			name = Todo;
+			name = Quotes;
 			productName = Todo;
-			productReference = 90D0FA91285FCBC1001393DB /* Todo.app */;
+			productReference = 90D0FA91285FCBC1001393DB /* Quotes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 90D0FA8C285FCBC1001393DB /* Build configuration list for PBXProject "Todo" */;
+			buildConfigurationList = 90D0FA8C285FCBC1001393DB /* Build configuration list for PBXProject "Quotes" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				90D0FA90285FCBC1001393DB /* Todo */,
+				90D0FA90285FCBC1001393DB /* Quotes */,
 			);
 		};
 /* End PBXProject section */
@@ -360,7 +361,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		90D0FA8C285FCBC1001393DB /* Build configuration list for PBXProject "Todo" */ = {
+		90D0FA8C285FCBC1001393DB /* Build configuration list for PBXProject "Quotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90D0FAA8285FCBC3001393DB /* Debug */,
@@ -369,7 +370,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90D0FAAA285FCBC3001393DB /* Build configuration list for PBXNativeTarget "Todo" */ = {
+		90D0FAAA285FCBC3001393DB /* Build configuration list for PBXNativeTarget "Quotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90D0FAAB285FCBC3001393DB /* Debug */,

@@ -4,43 +4,65 @@
 //
 //  Created by Adnan Joraid on 2022-06-19.
 //
-
 #import "ViewController.h"
+#import "Quote.h"
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ViewController ()
 
-@property (strong, nonatomic) UITableView *myTableView;
+@property (strong, nonatomic) NSMutableArray<Quote *> *quotes;
 
 @end
 
 @implementation ViewController
 
+NSString *cellId = @"cellId";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.myTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    [self setupQuotes];
     
-    self.myTableView.dataSource = self;
-    self.myTableView.delegate = self;
-    [self.view addSubview:self.myTableView];
+    self.navigationItem.title = @"Quotes";
+    self.navigationController.navigationBar.prefersLargeTitles = YES;
+    
+    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:cellId];
+}
+
+- (void)setupQuotes{
+    self.quotes = NSMutableArray.new;
+    
+    Quote *quote = Quote.new;
+    quote.author = @"Thomas Edison";
+    quote.quote = @"Genius is one percent inspiration and ninety-nine percent perspiration.";
+    [self.quotes addObject:quote];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return self.quotes.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    }
-    cell.textLabel.text = @"test";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    
+    Quote *quote = self.quotes[indexPath.row];
+    
+    cell.textLabel.text = quote.author;
+
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @end

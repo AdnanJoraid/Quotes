@@ -8,20 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		90D0FA96285FCBC1001393DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D0FA95285FCBC1001393DB /* AppDelegate.m */; };
-		90D0FA99285FCBC1001393DB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D0FA98285FCBC1001393DB /* SceneDelegate.m */; };
 		90D0FA9C285FCBC1001393DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D0FA9B285FCBC1001393DB /* ViewController.m */; };
 		90D0FA9F285FCBC1001393DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D0FA9D285FCBC1001393DB /* Main.storyboard */; };
 		90D0FAA1285FCBC3001393DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D0FAA0285FCBC3001393DB /* Assets.xcassets */; };
 		90D0FAA4285FCBC3001393DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D0FAA2285FCBC3001393DB /* LaunchScreen.storyboard */; };
 		90D0FAA7285FCBC3001393DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D0FAA6285FCBC3001393DB /* main.m */; };
+		90D0FAB6285FDF69001393DB /* Quote.h in Sources */ = {isa = PBXBuildFile; fileRef = 90D0FAB5285FDF69001393DB /* Quote.h */; };
+		90D0FAB8285FDFD2001393DB /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D0FAB7285FDFD2001393DB /* Quote.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		90D0FA91285FCBC1001393DB /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D0FA94285FCBC1001393DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90D0FA95285FCBC1001393DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		90D0FA97285FCBC1001393DB /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		90D0FA98285FCBC1001393DB /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		90D0FA9A285FCBC1001393DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		90D0FA9B285FCBC1001393DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		90D0FA9E285FCBC1001393DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +28,8 @@
 		90D0FAA3285FCBC3001393DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90D0FAA5285FCBC3001393DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90D0FAA6285FCBC3001393DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90D0FAB5285FDF69001393DB /* Quote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quote.h; sourceTree = "<group>"; };
+		90D0FAB7285FDFD2001393DB /* Quote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quote.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +62,9 @@
 		90D0FA93285FCBC1001393DB /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				90D0FAB4285FDF58001393DB /* Model */,
 				90D0FA94285FCBC1001393DB /* AppDelegate.h */,
 				90D0FA95285FCBC1001393DB /* AppDelegate.m */,
-				90D0FA97285FCBC1001393DB /* SceneDelegate.h */,
-				90D0FA98285FCBC1001393DB /* SceneDelegate.m */,
 				90D0FAAD285FCC35001393DB /* Controller */,
 				90D0FA9D285FCBC1001393DB /* Main.storyboard */,
 				90D0FAA0285FCBC3001393DB /* Assets.xcassets */,
@@ -82,6 +82,15 @@
 				90D0FA9B285FCBC1001393DB /* ViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		90D0FAB4285FDF58001393DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90D0FAB5285FDF69001393DB /* Quote.h */,
+				90D0FAB7285FDFD2001393DB /* Quote.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,10 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D0FAB6285FDF69001393DB /* Quote.h in Sources */,
 				90D0FA9C285FCBC1001393DB /* ViewController.m in Sources */,
 				90D0FA96285FCBC1001393DB /* AppDelegate.m in Sources */,
+				90D0FAB8285FDFD2001393DB /* Quote.m in Sources */,
 				90D0FAA7285FCBC3001393DB /* main.m in Sources */,
-				90D0FA99285FCBC1001393DB /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -285,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

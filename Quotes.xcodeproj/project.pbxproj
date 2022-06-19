@@ -72,8 +72,7 @@
 				90D0FAA5285FCBC3001393DB /* Info.plist */,
 				90D0FAA6285FCBC3001393DB /* main.m */,
 			);
-			name = Quote;
-			path = Todo;
+			path = Quote;
 			sourceTree = "<group>";
 		};
 		90D0FAAD285FCC35001393DB /* Controller */ = {
@@ -313,7 +312,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = URF96XT28K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Todo/Info.plist;
+				INFOPLIST_FILE = Quote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -340,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = URF96XT28K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Todo/Info.plist;
+				INFOPLIST_FILE = Quote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

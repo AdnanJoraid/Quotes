@@ -43,26 +43,13 @@ NSString *cellId = @"cellId";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
-    
+    cell.textLabel.numberOfLines = 5;
     Quote *quote = self.quotes[indexPath.row];
     
-    cell.textLabel.text = quote.author;
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ -%@", quote.quote, quote.author];
 
     return cell;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @end

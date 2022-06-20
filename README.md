@@ -1,4 +1,4 @@
-# Do-It
+# Quotes
 ### iOS application written in Objective-C that fetches quotes from the Quote API
 
 # Demo 
